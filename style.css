@@ -1,0 +1,187 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* DEKTOP STYLING */
+body {
+    min-height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: #c5e4e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 925px;
+    height: 450px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+/* --- LEFT SIDE --- */
+
+#left {
+    /* border: solid red 1px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.numberInput {
+    width: 100%;
+    padding: 5px 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    background-color: #dbeaeb;
+    border: none;
+    border-radius: 5px;
+    -moz-appearance: textfield;
+}
+
+.numberInput:focus {
+    outline: solid 2px #61aaa1;
+}
+
+.numberInput::placeholder {
+    font-size: 20px;
+    text-align: left;
+}
+
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.percentageBtn {
+    width: 116px;
+    height: 50px;
+    /* margin-top: 15px; */
+    background-color: #00474b;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.percentageBtn:hover {
+    background-color: #9de9df;
+    color: #00474b;
+}
+
+.customPercentageInput {
+    width: 116px;
+    height: 50px;
+    background-color: #dbeaeb;
+    text-align: center;
+    color: #00474b;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+.customPercentageInput::placeholder {
+    font-size: 20px;
+    text-align: center;
+}
+
+.customPercentageInput:focus {
+    outline: solid 2px #61aaa1;
+}
+
+.customPercentageInput::-webkit-outer-spin-button,
+.customPercentageInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* --- RIGHT SIDE --- */
+
+#right {
+    width: 50%;
+    background-color: #00474b;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.amountRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.label1 {
+    color: white;
+}
+
+.label2 {
+    color: #5c8d92;
+}
+
+.tipAmount,
+.totalAmount {
+    color: #2ac9b3;
+    font-size: 30px;
+}
+
+#resetBtn {
+    width: 100%;
+    height: 50px;
+    background-color: #0d686d;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00474b;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#resetBtn:hover {
+    background-color: #2ac9b3;
+}
+
+
+/* RESPONSIVE STYLING*/

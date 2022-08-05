@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<!-- BODY CODE-->
+
+<body>
+  <h1>splitter</h1>
+
+  <main>
+    <section id="left">
+      <div id="billInputWrapper">
+        <label for="bill-amount">Bill Total</label>
+        <input type="number" id="billTotalInput" class="numberInput" placeholder="&euro;" name="bill-amount">
+      </div>
+
+      <div id="personInputWrapper">
+        <label for="noOfPersons">Number of People</label>
+        <input min="1" type="number" id="NoPersonsInput" class="numberInput" placeholder="&#xf007" name="noOfPersons"
+          style="font-family:Space Mono, FontAwesome">
+      </div>
+
+      <div id="tipInputWrapper">
+        <label>Select Tip &percnt;</label>
+        <div id="buttons">
+          <button class="percentageBtn" data-perc="5">5&percnt;</button>
+          <button class="percentageBtn" data-perc="10">10&percnt;</button>
+          <button class="percentageBtn" data-perc="15">15&percnt;</button>
+          <button class="percentageBtn" data-perc="25">25&percnt;</button>
+          <button class="percentageBtn" data-perc="50">50&percnt;</button>
+          <input type="number" class="customPercentageInput" placeholder="Custom">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="right">
+      <div id="amountsWrapper">
+        <div class="amountRow">
+          <div>
+            <p class="label1">Tip Amount</p>
+            <p class="label2">&#8725; person</p>
+          </div>
+          <p class="tipAmount">&euro; 0,00</p>
+        </div>
+        <div class="amountRow">
+          <div>
+            <p class="label1">Total</p>
+            <p class="label2">&#8725; person</p>
+          </div>
+          <p class="totalAmount">&euro; 0,00</p>
+        </div>
+      </div>
+
+      <button id="resetBtn">reset</button>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
