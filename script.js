@@ -58,6 +58,5 @@ resetBtn.addEventListener('click', function () {
 
 })
 
-// TO DO: Responsive CSS
 // TO DO: Error No of people input when empty
 // TO DO: REFACTOR Math sum
