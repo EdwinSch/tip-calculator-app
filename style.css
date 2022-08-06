@@ -117,8 +117,9 @@ label {
 }
 
 .customPercentageInput::placeholder {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    color: #9c9c9c;
 }
 
 .customPercentageInput:focus {
