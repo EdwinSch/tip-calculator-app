@@ -102,6 +102,10 @@ label {
     color: #00474b;
 }
 
+.noTip {
+    background-color: #0d9299;
+}
+
 .customPercentageInput {
     width: 116px;
     height: 50px;
@@ -166,14 +170,15 @@ label {
 
 #resetBtn {
     width: 100%;
-    height: 50px;
+    height: 45px;
     background-color: #0d686d;
     text-transform: uppercase;
     text-align: center;
-    color: #00474b;
+    color: #2ac9b3;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
+    letter-spacing: 2px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -213,6 +218,7 @@ label {
 
     #right {
         width: 100%;
+        padding: 30px;
     }
 
     .tipAmount,
