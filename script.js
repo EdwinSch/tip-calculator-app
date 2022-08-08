@@ -85,5 +85,3 @@ function inputError(inputfield) {
     }, 1000);
 }
 
-// TO DO: REFACTOR Math sum
-
