@@ -203,7 +203,6 @@ label {
         height: auto;
         padding: 30px;
         flex-direction: column;
-        /* gap: 50px; */
     }
 
     #left {
